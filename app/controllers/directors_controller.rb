@@ -10,7 +10,7 @@ class DirectorsController < ApplicationController
   def new
   end
 
-  def create_row
+  def create
     @director = Director.new
     @director.dob = params[:dob]
     @director.name = params[:name]
@@ -22,11 +22,11 @@ class DirectorsController < ApplicationController
     render("show")
   end
 
-  def edit_form
+  def edit
     @director = Director.find(params[:id])
   end
 
-  def update_row
+  def update
     @director = Director.find(params[:id])
 
     @director.dob = params[":dob"]

@@ -5,16 +5,16 @@ This application has 4 database-backed web CRUD resources: directors, movies, ro
 As usual, each resource has 7 "golden" actions that allow users to interact with it:
 
 ### CREATE
- - new_form
- - create_row
+ - new
+ - create
 
 ### READ
  - index
  - show
 
 ### UPDATE
- - edit_form
- - update_row
+ - edit
+ - update
 
 ### DELETE
  - destroy
